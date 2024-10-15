@@ -1,0 +1,10 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - LogsExtension\Context\LogsContext
+  extensions:
+    LogsExtension:
+      filepath: 'logs.txt'
+      enable: true

@@ -1,0 +1,20 @@
+{
+    "description": "An example of a behat extension",
+    "require-dev": {
+        "behat/behat": "^3.14.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LogsExtension\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LogsExtension\\": "src/",
+            "LogsExtension\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/behat"
+    }
+}
