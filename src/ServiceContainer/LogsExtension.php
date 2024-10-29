@@ -31,7 +31,7 @@ class LogsExtension implements Extension
         $builder
             ->addDefaultsIfNotSet()
                 ->children()
-                    ->scalarNode('enable')->defaultFalse()->end()
+                    ->booleanNode('enable')->defaultFalse()->end()
                     ->scalarNode('filepath')->defaultValue('behat.log')->end()
                 ->end()
             ->end();
